@@ -1,6 +1,14 @@
 /*Uber*/
 /*Regine Fae Serafico, Darrius Shaw, Yinmeng Tiao*/
 
+/* 
+Added SQL Server in SQL Server Object Explorer
+Entered '(localdb)\MSSQLLocalDB' as Server Name
+Windows Authentication
+Named Database: UberDb
+Connect
+*/
+
 CREATE DATABASE UberDb;
 GO
 
@@ -95,4 +103,6 @@ INSERT INTO LocationAddress(LocationID, StreetAdress, City, StateName, Country, 
 (209,	'75 Middlesex Turnpike',	'Burlington', 	'MA',	'US', 	01803),
 (210,	'31 Harrison Ave.'	,'Boston',	'MA', 	'US',	02111),
 (211,	'1286 Worcester St.',	'Natick', 	'MA', 	'US',	01760);
+
+
 
