@@ -39,10 +39,10 @@ CREATE TABLE Trip(
   Distance bigint NOT NULL,
   LengthAmt bigint NOT NULL,
   LocationID bigint NOT NULL);
-
+  
   CREATE TABLE LocationAddress(
   LocationID bigint NOT NULL PRIMARY KEY,
-  StreetAdress bigint NOT NULL,
+  StreetAddress bigint NOT NULL,
   City bigint NOT NULL,
   StateName bigint NOT NULL,
   Country bigint NOT NULL,
@@ -90,19 +90,25 @@ INSERT INTO Trip(TripID, EmployeeId, CustomerID, Price, Distance, LengthAmt, Loc
 (356,	12351,	107,	'8.97',   	4,	8, 208),
 (357,	12352,	108,	'17.19',	15,	19, 209),
 (358,	12353,	109,	'10.95',	9,	12, 210),
-(369,	12354,	110,	'24.84',	18,	24, 211);
+(369,	12354,	110,	'24.84',	18,	24, 211);*/
 
-INSERT INTO LocationAddress(LocationID, StreetAdress, City, StateName, Country, Zipcode) VALUES 
+INSERT INTO LocationAddress(LocationID, StreetAddress, City, StateName, Country, Zipcode) VALUES 
 (202,	'442 Washington St',	'Wellesley','MA','US', 02482),
 (203,	'87 Map Hill Drive',	'Babson Park',	'MA', 'US', 02457),
 (204,	'1 Harborside Dr',	'Boston',	'MA',	'US',	02128),
 (205,	'184 Linden Street',	'Wellesley',	'MA',	'US',	02481),
 (206,	'800 Boylston St.',	'Boston',	'MA',	'US',	02199),
-(207,	'429 Watetown St.',	'Newton', 	'MA',	'US',	02458),
-(208,	'1245 Worcester St.',	'Natick',	'MA',	'US',	01760),
+(207,	'1000 5th Ave',	'New York', 	'NY',	'US',	10028),
+(208,	'350 5th Ave',	'New York',	'NY',	'US',	10118),
 (209,	'75 Middlesex Turnpike',	'Burlington', 	'MA',	'US', 	01803),
 (210,	'31 Harrison Ave.'	,'Boston',	'MA', 	'US',	02111),
-(211,	'1286 Worcester St.',	'Natick', 	'MA', 	'US',	01760);
+(211,	'30 Rockefeller Plaza',	'New York', 	'NY', 	'US',	10112);
 
+/*Adjustment for query 4*/
+DELETE FROM Trip
+WHERE Price like '24%';
+GO 
 
-
+/*Adjustment for query 4*/
+INSERT INTO Trip(TripID, EmployeeId, CustomerID, Price, Distance, LengthAmt, LocationID) VALUES 
+(369,	12354,	110, NULL,	18,	24, 211);
