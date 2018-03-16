@@ -42,10 +42,10 @@ CREATE TABLE Trip(
   
   CREATE TABLE LocationAddress(
   LocationID bigint NOT NULL PRIMARY KEY,
-  StreetAddress bigint NOT NULL,
-  City bigint NOT NULL,
-  StateName bigint NOT NULL,
-  Country bigint NOT NULL,
+  StreetAddress varchar(50) NOT NULL,
+  City varchar(50) NOT NULL,
+  StateName varchar(50) NOT NULL,
+  Country varchar(50) NOT NULL,
   Zipcode float NOT NULL);
 
 ALTER TABLE Trip ADD CONSTRAINT FK_Trip_Employee 
