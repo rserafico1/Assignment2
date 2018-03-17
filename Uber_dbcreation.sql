@@ -1,5 +1,5 @@
 /*Uber*/
-/*Regine Fae Serafico, Darrius Shaw, Yinmeng Tiao*/
+/*Regine Fae Serafico, Darrius Shaw, Yinmeng Tian*/
 
 /* 
 Added SQL Server in SQL Server Object Explorer
