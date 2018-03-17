@@ -1,4 +1,4 @@
-/*Regine Fae Serafico, Darrius Shaw, Yinmeng Tiao*/
+/*Regine Fae Serafico, Darrius Shaw, Yinmeng Tian*/
 
 USE UberDb;
 
